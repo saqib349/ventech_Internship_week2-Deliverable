@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid dashboard</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        .main{
+            width: 90vw;
+            min-height: 80vh;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            margin: auto;
+            border: 1px solid black;
+            background-color: rgb(95, 95, 129);
+            gap: 1rem;
+            margin-top: 2rem;
+            border: 2px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 12px rgb(0,0,1);
+    }
+    .profile{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem;
+        background-color: rgb(37, 37, 77);
+
+
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-auto-rows: minmax(100px,auto);
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .first_row{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+    .second_row{
+         width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 1rem;
+    }
+    .secondrow_secondcolum{
+         width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 7fr 3fr;
+        gap: 1rem;
+    }
+    .secondcolum_firstrow{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+
+    .title{
+        width: 100%;
+        height: auto;
+        border: 1px solid black;
+        padding: 1rem;
+        background-color: rgb(37, 37, 77);
+        border: 1px;
+        border-radius: 5px;
+        display: flex;
+        gap: 0.5rem;
+    }
+    </style>
+
+</head>
+    
+<body>
+    <div class="main">
+        <div class="profile">
+            <img src="profile.png" alt="profile">
+            <span>name</span>
+            <span>contact</span>
+            <span>email</span>
+            <span>linkedIn</span>
+        </div>
+        <div class="container">
+            <div class="first_row">
+                <div class="title title1">
+                    <img src="title1.png" alt="title1">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea officiis labore est cupiditate
+                        ducimus aspernatur consequuntur error tempora fugit sunt obcaecati, voluptatem</p>
+
+                </div>
+                <div class="title title2">
+                    <img src="title2.png" alt="title2">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea officiis labore est cupiditate
+                        ducimus aspernatur consequuntur error tempora fugit sunt obcaecati, voluptatem</p>
+
+                </div>
+            </div>
+            <div class="second_row">
+                <div class="title title3">
+                    <img src="title3.png" alt="title3">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea officiis labore est cupiditate
+                        ducimus aspernatur consequuntur error tempora fugit sunt obcaecati, voluptatem</p>
+
+                </div>
+                <div class="secondrow_secondcolum">
+                    <div class="secondcolum_firstrow">
+                        <div class="title title4">
+                            <img src="title4.png" alt="title4">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea officiis labore est
+                                cupiditate ducimus aspernatur consequuntur error tempora fugit sunt obcaecati,
+                                voluptatem</p>
+
+                        </div>
+                        <div class="title title5">
+                            <img src="title5.png" alt="title5">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea officiis labore est
+                                cupiditate ducimus aspernatur consequuntur error tempora fugit sunt obcaecati,
+                                voluptatem</p>
+
+                        </div>
+                    </div>
+                    <div class="title title6">
+                        <img src="title5.png" alt="title5">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea officiis labore est
+                            cupiditate ducimus aspernatur consequuntur error tempora fugit sunt obcaecati,
+                            voluptatem</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
