@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        .contact{
+            width: 80vw;
+            min-height: 80vh;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin: auto;
+            border: 2px solid white;
+            border-radius: 10px;
+            box-shadow: 0px 5px 12px rgb(0, 0, 0.8);
+        
+        }
+        .description{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            padding: 2rem;
+            background-color: rgb(40, 144, 235);
+
+        }
+        .description h2{
+            font-size: 50px;
+        }
+
+        .form{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding-left: 2rem;
+            padding-top: 2rem;
+        }
+        .form h1{
+            width: 100%;
+            text-align: center;
+        }
+
+        .form button{
+            margin-left: 10rem;
+            height: 3rem;
+        }
+
+    </style>
+</head>
+
+<body>
+     <header class="header">
+        <nav>
+            <ul class="navbar">
+                <li>
+                    <a href="home.html">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="projects.html">PROJECTS</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+        </div>
+    </header>
+    <main class="contact">
+        <div class="description">
+            <h2>
+                let's chat
+            </h2>
+            <p>
+                wether you  have a question , want to start a project or simply want to connect  
+            </p>
+            <p>feel free to send me a message in the contact form</p>
+        </div>
+
+        <form class="form" action="#">
+            <h1>
+                Contact
+            </h1>
+            <label for="first_name">First name *</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <label for="last_name">Last name *</label>
+            <input type="text" id="last_name" name="last_name" required>
+              
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+            
+            <fieldset>
+                <legend>
+                    Query Type *
+                </legend>
+                <input type="radio" name="query" id="general_query" value="general" required>
+                <label for="general_query">General Query</label>
+                <input type="radio" id="support" name="query" value="support">
+                <label for="support">Support Request</label>
+            </fieldset>
+            
+            <label for="message">Message *</label>
+            
+            <textarea name="message" id="message" required> </textarea>
+            <section class="terms">
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">
+                    i consent to being contacted by the team *
+                </label>
+            </section>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Saqib Akbar. All rights reserved.</p>
+        <ul>
+            <li><a href="https://github.com/saqib349">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/saqib-akbar-383246322">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

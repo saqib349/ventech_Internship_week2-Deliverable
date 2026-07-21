@@ -1,0 +1,114 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.5;
+        box-sizing: border-box;
+        color: rgb(7, 7, 7);
+    }
+
+    .header {
+        width: 90vw;
+        height: 10vh;
+        margin: auto;
+        background-color: dimgray;
+        margin-bottom: 1rem;
+    }
+
+    .header nav {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0px 0px 100px rgb(105, 105, 108);
+
+    }
+
+    a {
+        text-decoration: none;
+
+    }
+
+     a:hover {
+        color: rgb(29, 90, 57);
+    }
+
+    /* main body styling */
+    .main {
+        width: 90vw;
+        min-height: 80vh;
+        margin: auto;
+        padding: 4rem;
+    }
+
+    .hero img {
+        float: right;
+        border-radius: 50%;
+        width: 30%;
+        height: 20%;
+    }
+    .hero{
+        margin-bottom: 2rem;
+    }
+    .herocontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    button{
+        background-color: rgb(35, 234, 65);
+        width: 40% ;
+        height: 4rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    button:hover{
+        color:rgb(29, 90, 57);
+    }
+
+    button a {
+        background-color: transparent;
+    }
+
+    /* footer styling */
+    footer {
+        width: 90vw;
+        height: 10vh;
+        margin: auto;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    footer ul {
+        display: flex;
+        list-style: none;
+        gap: 4rem;
+    }
+
+    .projects {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+
+    }
+
+    h1 h3 h5 {
+        color: rgb(35, 234, 65);
+    }
